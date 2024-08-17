@@ -7,10 +7,9 @@ import foldersURL from '/src/assets/search/Folders.svg'
 
 import useWindowSize from '/src/hooks/useWindowSize.js'
 
-
 import './Search.css'
 
-const Search = ({formData, formErrors, onInputChange, onCheckboxChange, onSubmit}) => {
+const Search = () => {
     const { width } = useWindowSize()
 
     return (
@@ -29,13 +28,7 @@ const Search = ({formData, formErrors, onInputChange, onCheckboxChange, onSubmit
                 <span className='search-hint-emphasis'>Чем больше заполните</span>, тем точнее поиск
             </p>
             <div className='search-form-container'>
-                <SearchForm
-                    formData={formData}
-                    formErrors={formErrors}
-                    onInputChange={onInputChange}
-                    onCheckboxChange={onCheckboxChange}
-                    onSubmit={onSubmit}
-                />
+                <SearchForm />
                 <img className='search-img' src={imageURL} alt="" />
             </div>
         </div>

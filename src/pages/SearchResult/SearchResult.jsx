@@ -10,7 +10,7 @@ import Button from '/src/UI/Button/Button'
 
 import image1URL from '/src/assets/search_res/search_result1.svg'
 
-import { getIdsForRequest } from '../../App'
+import { getIdsForRequest } from '../Search/components/SearchForm/SearchForm'
 import { useHistograms } from '../../context/HistogramsContext'
 import { useDocumentsInfo, useDocumentsInfoDispatch } from '../../context/DocumentsContext'
 import { useHandleTokenExpired } from '../../hooks/useHandleTokenExpired'
@@ -28,7 +28,7 @@ const SearchResult = () => {
     let hasMore
     const documentsInfo = useDocumentsInfo()
     if (documentsInfo) {
-        const {documentsIds: _documentsIds, documents: _documents, startIndex: _startIndex, hasMore: _hasMore} = documentsInfo
+        const { documentsIds: _documentsIds, documents: _documents, startIndex: _startIndex, hasMore: _hasMore } = documentsInfo
         documentsIds = _documentsIds
         documents = _documents
         startIndex = _startIndex
@@ -39,11 +39,11 @@ const SearchResult = () => {
 
     async function handleMoreClick() {
         setIsDisabled(true)
-        const {idsForRequest, isLast} = getIdsForRequest(documentsIds, startIndex)
+        const { idsForRequest, isLast } = getIdsForRequest(documentsIds, startIndex)
         const URL = `${BASE_URL}/api/v1/documents`
         let resp
         try {
-            resp = await axios.post(URL, {ids: idsForRequest})
+            resp = await axios.post(URL, { ids: idsForRequest })
         } catch (error) {
             console.error(error)
         }
@@ -66,7 +66,7 @@ const SearchResult = () => {
         setIsDisabled(false)
     }
 
-    
+
     return (
         <>
             <div className='search-res-title-container'>
@@ -88,11 +88,11 @@ const SearchResult = () => {
                 <Subtitle>Список документов</Subtitle>
                 <div className='document-list-card-wrapper'>
                     {
-                    documents
-                    &&
-                    documents.map((document) => (
-                        <DocumentCard key={document.ok.id} document={document.ok}/>
-                    ))}
+                        documents
+                        &&
+                        documents.map((document) => (
+                            <DocumentCard key={document.ok.id} document={document.ok} />
+                        ))}
                 </div>
                 {hasMore && <Button onClick={handleMoreClick} fs={22} ls={4} disabled={isDisabled}>Показать больше</Button>}
             </div>
