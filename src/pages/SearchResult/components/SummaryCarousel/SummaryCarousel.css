@@ -1,0 +1,195 @@
+.summary-carousel {
+    display: flex;
+    height: 158px;
+    justify-content: center;
+}
+
+.carousel-legend {
+    width: 133px;
+    min-width: 133px;
+    background-color: rgba(2, 148, 145, 1);
+    padding: 17px 28px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    border-radius: 10px 0px 0px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+}
+
+.carousel-wrapper {
+    min-width: calc(133px * 8);
+    padding: 17px 21px 17px 0px;
+    display: flex;
+    border: 2px solid rgba(2, 148, 145, 1);
+    border-radius: 0 10px 10px 0;
+}
+
+.summary-carousel-item {
+    width: 133px;
+    min-width: 133px;
+    border-right: 2px solid rgba(148, 148, 148, 1);
+    padding: 0 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 29px;
+    font-size: 18px;
+    line-height: 21.78px;
+    letter-spacing: 0.02em;
+}
+
+.loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.loader > .spinner {
+    width: 50px;
+    height: 50px;
+}
+
+.loader > p {
+    font-size: 18px;
+    line-height: 21.78px;
+    letter-spacing: 0.02em;
+    margin-top: 11px;
+}
+
+@media screen and (min-width: 1700px) {
+    .carousel-wrapper {
+        min-width: calc(133px * 10);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .summary-carousel {
+        justify-content: center;
+    }
+
+    .carousel-wrapper {
+        min-width: calc(133px * 6);
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .carousel-wrapper {
+        min-width: calc(133px * 4);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .carousel-wrapper {
+        min-width: calc(133px * 2);
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .summary-carousel {
+        display: grid;
+        grid-template-columns: 39px 1fr 39px;
+        grid-template-rows: 75px 65px;
+        grid-template-areas:
+                    ". legend ."
+                    "left-btn carousel-wrapper right-btn";
+    }
+
+    .carousel-legend {
+        min-width: 298px;
+        width: 100%;
+        height: 75px;
+        grid-area: legend;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 10px 10px 0 0;
+        padding: 23px 15px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+        font-size: 18px;
+        line-height: 21.78px;
+        letter-spacing: 0.01em;
+    }
+
+    .carousel-legend > p {
+        display: inline-block;
+        width: 89px;
+        align-content: center;
+    }
+
+    .carousel-legend > p:not(:first-of-type) {
+        text-align: end;
+    }
+
+    .carousel-wrapper {
+        min-width: 298px;
+        grid-area: carousel-wrapper;
+        padding: 18px 10px 26px;
+        border: 0;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .summary-carousel-item {
+        flex-direction: row;
+        width: 100%;
+        border: 0;
+        padding: 0;
+        justify-content: space-between;
+        font-size: 16px;
+        line-height: 19.36px;
+        letter-spacing: 0.01em;
+    }
+
+    .summary-carousel-item > p {
+        display: inline-block;
+        width: 86px;
+        text-align: center;
+    }
+
+    .summary-carousel-item > p:nth-of-type(2) {
+        padding-left: 35px;
+    }
+    
+    .summary-carousel-item > p:last-of-type {
+        padding-left: 20px;
+    }
+
+    .loader > .spinner {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .carousel-legend,
+    .carousel-wrapper {
+        min-width: 0;
+    }
+
+    .carousel-legend {
+        font-size: 16px;
+    }
+
+    .carousel-legend > p {
+        min-width: 63px;
+    }
+
+    .summary-carousel-item {
+        font-size: 14px;
+        justify-content: space-between;
+    }
+
+    .summary-carousel-item > p:nth-of-type(2) {
+        padding-left: 10px;
+    }
+    
+    .summary-carousel-item > p:last-of-type {
+        padding-left: 5px;
+    }
+}

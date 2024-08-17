@@ -1,0 +1,60 @@
+.auth-form {
+    grid-area: form;
+    width: 429px;
+    padding: 17px 25px 39px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-form::before {
+    content: url(/src/assets/auth/lock.svg);
+    position: absolute;
+    top: -55px;
+    left: -51px
+}
+
+.toggle-btn-container {
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 40px;
+}
+
+.oauth-container {
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+@media screen and (max-width: 1020px) {
+    .auth-form {
+        margin-bottom: 49px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .auth-form {
+        width: 370px;
+        padding: 15px 15px 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .auth-form::before {
+        left: 81px;
+        top: -81px;
+    }
+
+    .auth-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .oauth-container {
+        justify-content: center;
+    }
+}

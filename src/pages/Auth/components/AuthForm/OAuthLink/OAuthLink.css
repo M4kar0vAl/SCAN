@@ -1,0 +1,18 @@
+.oauth-link {
+    width: 96px;
+    height: 31px;
+    border-radius: 3px;
+    border: 1px solid rgba(89, 112, 255, 0.51);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 20px;
+}
+
+.oauth-link > a {
+    height: 16px;
+}
+
+.oauth-link:nth-child(2) > a {
+    margin-top: -5px;
+}

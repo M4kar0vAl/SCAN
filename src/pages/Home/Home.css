@@ -1,0 +1,37 @@
+.main-2-img {
+    margin: 0px auto 107px;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .main-2-img {
+        width: calc(100vw * 2);
+        height: 392px;
+        margin-left: -20%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main-2-img {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-2-img {
+        margin-left: 0;
+        margin-top: -10px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .main-2-img {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-2-img {
+        margin-top: -45px;
+    }
+}

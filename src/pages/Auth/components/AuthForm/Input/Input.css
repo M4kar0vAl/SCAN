@@ -1,0 +1,86 @@
+.input {
+    height: 43px;
+    border: 1px solid rgba(199, 199, 199, 1);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
+
+.input::placeholder {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    opacity: 40%;
+}
+
+.login-form-label {
+    font-size: 16px;
+    color: rgba(148, 148, 148, 1);
+    margin-bottom: 15px;
+    line-height: 19px;
+}
+
+.login-form-input {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+    padding: 12px 19px;
+}
+
+.login-form-input:last-of-type {
+    margin-bottom: 30px;
+}
+
+.search-form-label {
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.required::after {
+    content: '*';
+    font-size: 25px;
+    letter-spacing: 0.03em;
+    margin-left: 2px;
+    line-height: 30px;
+}
+
+.required.label-error::after {
+    color: rgba(255, 89, 89, 1);
+}
+
+.search-form-input {
+    font-size: 14px;
+    margin-bottom: 30px;
+    letter-spacing: 0.03em;
+    padding: 13px 22px;
+    width: 242px;
+}
+
+.error {
+    color: rgba(255, 89, 89, 1);
+}
+
+p.error {
+    text-align: center;
+}
+
+.input.error {
+    border-color: rgba(255, 89, 89, 1);
+}
+
+@media screen and (max-width: 650px) {
+    .login-form-label {
+        font-size: 14px;
+    }
+
+    .login-form-input:last-of-type {
+        margin-bottom: 34px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .search-form-input {
+        width: 100%;
+    }
+}

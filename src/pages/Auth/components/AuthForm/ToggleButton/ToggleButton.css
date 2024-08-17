@@ -1,0 +1,30 @@
+.toggle-btn {
+    background-color: transparent;
+    min-width: 151px;
+    padding: 8px 20px;
+    color: rgba(199, 199, 199, 1);
+    border: 0;
+    border-bottom: 2px solid rgba(199, 199, 199, 1);
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+}
+
+.btn-active {
+    color: rgba(2, 148, 145, 1);
+    border-color: rgba(2, 148, 145, 1);
+}
+
+@media screen and (max-width: 650px) {
+    .toggle-btn {
+        font-size: 14px;
+        min-width: 103px;
+        padding: 10px 17px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .toggle-btn {
+        padding: 10px 0;
+    }
+}

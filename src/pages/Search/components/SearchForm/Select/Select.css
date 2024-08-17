@@ -1,0 +1,17 @@
+.search-form-select {
+    width: 242px;
+    padding: 13px 22px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 30px;
+    background: url('/src/assets/search/dropdown_arrow.svg') no-repeat right 6% top 50% #fff;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 500px) {
+    .search-form-select {
+        width: 100%;
+    }
+}

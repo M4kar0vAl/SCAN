@@ -1,0 +1,155 @@
+.search-form {
+    width: 872px;
+    display: flex;
+    column-gap: 11px;
+    padding: 21px 39px 32px 44px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.search-form .btn {
+    width: 305px;
+    margin-bottom: 10px;
+}
+
+.search-form p.error {
+    width: 242px;
+    margin-top: -25px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.search-range {
+    white-space: nowrap;
+}
+
+.search-range > p.error {
+    width: 100%;
+    margin: 0;
+    margin-top: 7px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container {
+    margin-bottom: 145px;
+    padding-top: 15px;
+}
+
+.search-form-btn-container {
+    align-self: flex-end;
+    margin-top: 7px;
+}
+
+.search-form-btn-container > p {
+    font-size: 14px;
+    color: rgba(148, 148, 148, 1);
+    letter-spacing: 0.03em;
+    line-height: 17px;
+}
+
+@media screen and (max-width: 1100px) {
+    .search-form {
+        width: 100%;
+        padding: 24px 26px 37px 14px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .search-form-btn-container > .btn {
+        font-size: 20px;
+    }
+
+    .search-form-btn-container {
+        align-self: center;
+    }
+
+    .search-form {
+        width: 500px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .checkbox-container {
+        margin-bottom: 30px;
+        padding-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .search-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+
+    .search-form {
+        row-gap: 0;
+    }
+
+    .search-range > .date-input:nth-of-type(2) {
+        margin-bottom: 40px;
+    }
+
+    .search-range > p.error {
+        margin-top: -35px;
+        margin-bottom: 18px;
+    }
+
+    .search-range {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-range > *:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .checkbox-container {
+        display: none;
+    }
+
+    .search-form-btn-container {
+        margin-top: 0;
+    }
+
+    .search-range > *:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .search-range > p.error {
+        margin-top: -35px;
+        margin-bottom: 18px;
+    }
+
+    .search-range > .date-input:nth-of-type(2) {
+        margin-bottom: 40px;
+    }
+
+    .search-form {
+        row-gap: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .search-form .btn {
+        width: 100%;
+    }
+
+    .search-form-btn-container {
+        width: 100%;
+    }
+}

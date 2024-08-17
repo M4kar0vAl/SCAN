@@ -1,0 +1,47 @@
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list > li:not(:last-child) {
+    margin-right: 49px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.light {
+    color: #fff;
+}
+
+.inner-header > nav {
+    align-content: center;
+}
+
+.burger {
+    flex-direction: column;
+}
+
+.burger > li:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+
+@media screen and (max-width: 530px) {
+    .inner-header > nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav-link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-list > li:not(:last-child) {
+        margin-right: 15px;
+    }
+}

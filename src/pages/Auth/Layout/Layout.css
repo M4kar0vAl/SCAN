@@ -1,0 +1,38 @@
+.main-auth {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.01em;
+    padding: 69px 141px 80px 60px;
+}
+
+@media screen and (min-height: 902px) {
+    .main-auth {
+        min-height: calc(100vh - 137px - 93px);
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .main-auth {
+        padding: 69px 60px 80px;
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    .main-auth {
+        padding: 45px 30px 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-auth {
+        padding: 31px 26px 80px 14px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .main-auth {
+        padding: 31px 14px 80px;
+    }
+}

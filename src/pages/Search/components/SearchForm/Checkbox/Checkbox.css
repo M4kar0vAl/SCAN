@@ -1,0 +1,43 @@
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+    border-radius: 1px;
+    opacity: 40%;
+    padding: 3px;
+}
+
+.checkbox {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 17px;
+    margin-bottom: 15px;
+}
+
+.checkbox-input:checked {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    content: url('/src/assets/search/check_mark.svg');
+    outline: 1px solid #000;
+    opacity: 1;
+}
+
+.checkbox-label {
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 22px;
+    opacity: 40%;
+    white-space: nowrap;
+}
+
+.checked {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 890px) {
+    .checkbox-label {
+        font-size: 16px;
+    }
+}

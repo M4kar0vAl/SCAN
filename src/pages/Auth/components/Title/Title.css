@@ -1,0 +1,49 @@
+.title-auth {
+    grid-area: title;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    line-height: 48px;
+}
+
+@media screen and (max-width: 1439px) {
+    .title-auth {
+        font-size: 31px;
+        line-height: 37px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .title-auth {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .title-auth {
+        font-size: 40px;
+        line-height: 48px;
+        margin-bottom: 126px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .title-auth {
+        font-size: 31px;
+        line-height: 37px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .title-auth {
+        font-size: 22px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .title-auth {
+        font-size: 20px;
+    }
+}

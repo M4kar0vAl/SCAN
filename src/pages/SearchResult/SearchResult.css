@@ -1,0 +1,145 @@
+.search-res-title-container {
+    position: relative;
+    margin-bottom: 127px;
+}
+
+.search-res-title-container > img {
+    position: absolute;
+    top: -44px;
+    right: 43px;
+}
+
+.search-res-hint {
+    font-size: 20px;
+    line-height: 24.2px;
+    letter-spacing: 0.02em;
+}
+
+.search-res-hint-emphasis {
+    letter-spacing: 0.01em;
+}
+
+.summary {
+    margin-bottom: 107px;
+}
+
+.summary > .subtitle-search-res {
+    margin-bottom: 17px;
+}
+
+.res-count {
+    color: rgba(148, 148, 148, 1);
+    font-size: 18px;
+    line-height: 21.78px;
+    letter-spacing: 0.02em;
+    margin-bottom: 27px;
+}
+
+.document-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+}
+
+.document-list > .subtitle-search-res {
+    margin-bottom: 58px;
+}
+
+.document-list-card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 38px;
+}
+
+.document-list > .btn {
+    width: 305px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .search-res-title-container > img {
+        right: 0;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .search-res-title-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 59px;
+    }
+    
+    .search-res-title-container > img {
+        position: static;
+        width: 553px;
+        align-self: center;
+    }
+
+    .summary {
+        margin-bottom: 57px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .document-list-card-wrapper {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 20px;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .document-list {
+        padding-bottom: 19px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search-res-hint {
+        font-size: 18px;
+        line-height: 21.78px;
+        letter-spacing: 0.01em;
+        margin-bottom: 21px;
+        white-space: nowrap;
+    }
+
+    .search-res-title-container > img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .res-count {
+        letter-spacing: 0.01em;
+        margin-bottom: 34px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .search-res-title-container > img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .document-list > .btn {
+        width: 100%;
+        margin: 0;
+    }
+
+    .document-list {
+        padding-bottom: 33px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .search-res-hint {
+        font-size: 16px;
+    }
+
+    .document-list-card-wrapper {
+        margin-left: -5px;
+    } 
+}

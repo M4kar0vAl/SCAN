@@ -1,0 +1,46 @@
+.auth-links {
+    align-content: center;
+}
+
+.auth-inner {
+    display: flex;
+    align-items: center;
+}
+
+.sep {
+    margin: 0px 18px;
+}
+
+.reg-link {
+    color: #000;
+    opacity: 40%;
+}
+
+.reg-link-burger {
+    color: #000;
+    opacity: 40%;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.burger-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 575px) {
+    .sep {
+        margin: 0 9px;
+    }
+
+    .reg-link {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .auth-links {
+        display: none;
+    }
+}

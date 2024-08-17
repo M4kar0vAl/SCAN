@@ -1,0 +1,33 @@
+.header {
+    height: 93px;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.dark {
+    background-color: rgba(2, 148, 145, 1);
+}
+
+@media screen and (max-width: 800px) {
+    .inner-header {
+        padding: 0 26px 0 14px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .inner-header {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .inner-header {
+        padding: 0 26px 0 14px;
+    }
+}

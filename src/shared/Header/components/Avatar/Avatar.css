@@ -1,0 +1,39 @@
+.avatar {
+    display: flex;
+    margin: auto 0;
+    column-gap: 4px;
+    font-size: 14px;
+}
+
+.avatar-img {
+    border-radius: 50%;
+}
+
+.avatar-info {
+    text-align: end;
+}
+
+.avatar-info > p {
+    opacity: 70%;
+}
+
+.avatar-info > button {
+    border: 0;
+    background-color: #fff;
+    font-size: 10px;
+    opacity: 40%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+    .avatar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .avatar {
+        font-size: 12px;
+    }
+}
+

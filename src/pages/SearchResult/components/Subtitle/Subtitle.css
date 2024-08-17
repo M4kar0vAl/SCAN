@@ -1,0 +1,11 @@
+.subtitle-search-res {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 530px) {
+    .subtitle-search-res {
+        font-size: 28px;
+    }
+}

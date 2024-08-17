@@ -1,0 +1,74 @@
+.btn {
+    display: inline-block;
+    background-color: rgba(89, 112, 255, 1);
+    width: 100%;
+    height: 59px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 59px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px;
+    font-weight: 500;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    opacity: 50%;
+    cursor: default;
+}
+
+.blue {
+    background-color: rgba(89, 112, 255, 1);
+    color: #fff;
+}
+
+.green {
+    background-color: rgba(124, 227, 225, 1);
+    color: #000;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.ls-1 {
+    letter-spacing: 0.01em;
+}
+
+.ls-2 {
+    letter-spacing: 0.02em;
+}
+
+.ls-3 {
+    letter-spacing: 0.03em;
+}
+
+.ls-4 {
+    letter-spacing: 0.04em;
+}
+
+@media screen and (max-width: 650px) {
+    .fs-20 {
+        font-size: 18px;
+    }
+
+    .fs-22 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .fs-20 {
+        font-size: 16px;
+    }
+
+    .fs-22 {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,16 @@
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    height: 491px;
+    padding: 0 40px 78px;
+    background-color: rgba(2, 148, 145, 1);
+    justify-content: center;
+    row-gap: 40px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}

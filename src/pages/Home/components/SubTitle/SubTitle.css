@@ -1,0 +1,26 @@
+.subtitle-main {
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+
+@media screen and (max-width: 850px) {
+    .subtitle-main {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .subtitle-main {
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .subtitle-main {
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
