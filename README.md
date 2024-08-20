@@ -12,3 +12,16 @@
 ## Запуск
 
 `npm run dev`
+
+## В докере
+
+### Запуск
+
+В корне проекта:
+
+   - `docker build -t scan .`
+   - `docker run --rm -d -p 5173:5173 --name scan scan`
+
+### Остановка
+
+`docker stop scan`
