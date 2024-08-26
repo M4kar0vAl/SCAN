@@ -1,4 +1,4 @@
-FROM node
+FROM node:alpine AS build_stage
 
 WORKDIR /app
 
@@ -8,6 +8,12 @@ RUN npm update npm && npm install
 
 COPY . ./
 
-EXPOSE 5173
+RUN npm run build
 
-CMD [ "npm", "run", "dev" ]
+FROM nginx
+
+COPY --from=build_stage /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD [ "nginx", "-g", "daemon off;" ]

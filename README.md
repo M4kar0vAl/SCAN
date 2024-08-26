@@ -20,7 +20,7 @@
 В корне проекта:
 
    - `docker build -t scan .`
-   - `docker run --rm -d -p 5173:5173 --name scan scan`
+   - `docker run --rm -d -p 80:80 --name scan scan`
 
 ### Остановка
 
